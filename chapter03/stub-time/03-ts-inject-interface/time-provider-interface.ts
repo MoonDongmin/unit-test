@@ -1,3 +1,3 @@
 export interface TimeProviderInterface {
-    getDay(): number;
+    getDay(): number | undefined;
 }

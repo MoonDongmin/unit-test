@@ -1,6 +1,7 @@
-import {inject, SATURDAY, verifyPassword} from './password-verifier-time00-modular';
+import { inject, SATURDAY, verifyPassword } from './password-verifier-time00-modular';
+import { describe, expect, it, test } from "bun:test";
 
-const injectData = (newDay) => {
+const injectData = (newDay: number) => {
   const reset = inject({
     moment: function () {
       // 현재 moment.js 모듈의 API를 위조
@@ -17,11 +18,10 @@ describe('verifyPassword', () => {
     it('throws an error', () => {
       const reset = injectData(SATURDAY);
 
-      expect(() => verifyPassword('any input'))
-        .toThrowError('It\'s the weekend!');
-
+      expect(() => verifyPassword('any input', []))
+        .toThrow('It\'s the weekend!');
       reset();
     });
   });
 });
- 
+

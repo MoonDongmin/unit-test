@@ -1,4 +1,4 @@
-import {TimeProviderInterface} from "./time-provider-interface";
+import type {TimeProviderInterface} from "./time-provider-interface.ts";
 
 export const SUNDAY = 0, MONDAY = 1, SATURDAY = 6;
 

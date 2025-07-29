@@ -1,14 +1,19 @@
 import {
     MONDAY,
     SUNDAY,
-}                              from "../001-modular/password-verifier-time00-modular";
-import {TimeProviderInterface} from "./time-provider-interface";
-import {PasswordVerifier}      from "./password-verifier-time03";
+}                                   from "../001-modular/password-verifier-time00-modular";
+import {PasswordVerifier}           from "./password-verifier-time03";
+import type {TimeProviderInterface} from "./time-provider-interface.ts";
+import {
+    describe,
+    expect,
+    test,
+}                                   from "bun:test";
 
 class FakeTimeProvider implements TimeProviderInterface {
-    fakeDay: number;
+    public fakeDay?: number;
 
-    getDay(): number {
+    getDay(): number | undefined {
         return this.fakeDay;
     }
 }
