@@ -1,0 +1,17 @@
+{
+  "name": "chapter04-1",
+  "module": "src",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.17.20",
+    "@typescript/native-preview": "^7.0.0-dev.20250804.1",
+    "lodash": "^4.17.21"
+  }
+}
