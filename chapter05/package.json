@@ -1,0 +1,17 @@
+{
+  "name": "chapter05",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "1.2.20"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@fluffy-spoon/substitute": "^1.208.0",
+    "jest": "^30.0.5",
+    "jest-mock-extended": "^4.0.0"
+  }
+}
