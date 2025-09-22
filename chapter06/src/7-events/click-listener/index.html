@@ -1,0 +1,51 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>File to Be Tested</title>
+  <script src="index-helper.js"></script>
+</head>
+
+<body>
+  <div>
+    <div>A simple button</div>
+    <button data-testid="myButton" id="myButton">Click Me!</button>
+    <div data-testid="myResult" id="myResult">Waiting...</div>
+  </div>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>File to Be Tested</title>
+  <script>
+    window.addEventListener("load", () => {
+        document
+            .getElementById("myButton")
+            .addEventListener("click", onMyButtonClick);
+
+        const resultDiv = document.getElementById("myResult");
+        resultDiv.innerText = "Document Loaded";
+    });
+
+    function onMyButtonClick() {
+        const resultDiv = document.getElementById("myResult");
+        resultDiv.innerText = "Clicked!";
+    }
+  </script>
+</head>
+
+<body>
+  <div>
+    <div>A simple button</div>
+    <button data-testid="myButton" id="myButton">Click Me!</button>
+    <div data-testid="myResult" id="myResult">Waiting...</div>
+  </div>
+</body>
+
+</html>
