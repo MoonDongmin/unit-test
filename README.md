@@ -16,3 +16,7 @@
 [Chapter 07. 신뢰할 수 있는 테스트](https://www.notion.so/Chapter-07-28b357c44e5680c0b045f1ed27404ee2?pvs=21)
 
 [Chapter 08. 유지 보수성](https://www.notion.so/Chapter-08-28f357c44e568071a449f739f99fa4cd?pvs=21)
+
+# 제 4부 디자인과 프로세스
+
+[Chapter 09. 가독성](https://www.notion.so/Chapater-09-2a1357c44e5680f79528e87e4216822d?pvs=21)
